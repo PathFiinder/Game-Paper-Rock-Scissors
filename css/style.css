@@ -249,7 +249,7 @@
   .game__actual-score {
     position: absolute;
     bottom: 10px;
-    left: 5px;
+    left: 10px;
   }
   .game__final-score {
     position: absolute;
