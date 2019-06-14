@@ -393,9 +393,6 @@
   .game__image-wrapper .game__image {
     padding: 10px;
   }
-  .game__actual-score {
-    bottom: 180px;
-  }
   .game__actual-score__title {
     font-size: 40px;
   }
@@ -404,9 +401,6 @@
   }
   .game__actual-score__winner {
     font-size: 38px;
-  }
-  .game__final-score {
-    bottom: 150px;
   }
   .game__final-score__title {
     font-size: 40px;
