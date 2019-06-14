@@ -1,4 +1,51 @@
-@media (min-width: 768px)
+@media (min-width: 360px)
+    .game
+        &__actual-score
+            margin-top: 50px
+        &__final-score
+            margin-top: 50px
+
+@media (min-width: 411px)
+    .game
+        &__actual-score
+            margin-top: 80px
+        &__final-score
+            margin-top: 80px
+
+
+@media (min-width: 568px)
+    .game
+        &__image-wrapper
+            flex-direction: row
+            width: 80%
+            height: 150px
+            .game__image
+                height: 100%
+                flex-basis: 33.33%
+        &__actual-score
+            position: absolute
+            bottom: 10px
+            left: 5px
+        &__final-score
+            position: absolute
+            bottom: 0
+            right: 30px
+
+@media (min-width: 640px)
+    .game
+        &__actual-score  
+            bottom: 30px
+        &__final-score
+            bottom: 20px
+
+@media (min-width: 736px)
+    .game
+        &__actual-score  
+            bottom: 50px
+        &__final-score
+            bottom: 40px
+
+@media (min-width: 768px) and (orientation: landscape)
     .main
         &__title
             height: 200px
@@ -11,6 +58,90 @@
             height: 80px
             width: 200px
             font-size: 25px
+
+@media (min-width: 768px) and (orientation: portrait)
+    .game
+        &__title
+            padding-top: 50px
+            font-size: 40px
+            margin: 0px auto 30px auto
+        &__image-wrapper
+            width: 90%
+            height: 250px
+            .game__image
+                padding: 5px
+        &__actual-score
+            position: relative
+            left: 0
+            margin-top: 120px
+            &__title
+                font-size: 35px
+            &__user,&__pc
+                font-size: 28px
+            &__winner
+                font-size: 30px
+                
+        &__final-score
+            position: relative
+            right: 0
+            margin-top: 30px
+            &__title
+                font-size: 35px
+            &__results
+                font-size: 28px
+@media (min-width: 812px)
+    .main
+        &__button
+            top: calc(40% + 140px)
+            height: 110px
+            width: 250px
+            font-size: 32px
+            
+@media (min-width: 1024px) and (orientation: portrait)
+    .game
+        &__image-wrapper
+            height: 400px
+        &__actual-score
+            &__title
+                font-size: 55px
+            &__user,&__pc
+                font-size: 48px
+            &__winner
+                font-size: 50px
+                
+        &__final-score
+            position: relative
+            right: 0
+            margin-top: 30px
+            &__title
+                font-size: 55px
+            &__results
+                font-size: 45px
+
+@media (min-width: 1024px) and (orientation: landscape)
+    .game
+        &__title
+            padding-top: 50px
+            font-size: 40px
+            margin: 0px auto 30px auto
+        &__image-wrapper
+            height: 300px
+            width: 90%
+        &__actual-score
+            bottom: 70px
+            &__title
+                font-size: 40px
+            &__user,&__pc
+                font-size: 32px
+            &__winner
+                font-size: 38px
+                
+        &__final-score
+            &__title
+                font-size: 40px
+            &__results
+                font-size: 32px
+
 
 @media (min-width: 1024px)
     .main
@@ -25,3 +156,27 @@
             height: 110px
             width: 250px
             font-size: 32px
+
+
+@media (min-width: 1366px)
+    .game
+        &__title
+            font-size: 50px
+        &__image-wrapper
+            .game__image
+                padding: 10px
+        &__actual-score
+            bottom: 180px
+            &__title
+                font-size: 40px
+            &__user,&__pc
+                font-size: 32px
+            &__winner
+                font-size: 38px
+                
+        &__final-score
+            bottom: 150px
+            &__title
+                font-size: 40px
+            &__results
+                font-size: 32px

@@ -7,6 +7,7 @@
 
 .wrapper {
   max-width: 1500px;
+  min-width: 200px;
   margin: 0 auto;
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
@@ -95,6 +96,7 @@
   text-transform: uppercase;
   padding-top: 20px;
   margin: 0px auto 10px auto;
+  text-align: center;
   width: 90%;
   font-size: 20px;
 }
@@ -141,18 +143,111 @@
 }
 
 .game__actual-score {
-  display: none;
+  margin-top: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.game__actual-score__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game__actual-score__user, .game__actual-score__pc {
+  font-size: 18px;
+}
+
+.game__actual-score__winner {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game__actual-score__winner--active {
+  color: green;
 }
 
 .game__final-score {
-  display: none;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.game__final-score__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.game__final-score__results {
+  font-size: 16px;
 }
 
 .game--active {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
+  .game__actual-score {
+    margin-top: 50px;
+  }
+  .game__final-score {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 411px) {
+  .game__actual-score {
+    margin-top: 80px;
+  }
+  .game__final-score {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 568px) {
+  .game__image-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    height: 150px;
+  }
+  .game__image-wrapper .game__image {
+    height: 100%;
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+  .game__actual-score {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+  }
+  .game__final-score {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .game__actual-score {
+    bottom: 30px;
+  }
+  .game__final-score {
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 736px) {
+  .game__actual-score {
+    bottom: 50px;
+  }
+  .game__final-score {
+    bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
   .main__title {
     height: 200px;
     font-size: 70px;
@@ -169,6 +264,111 @@
   }
 }
 
+@media (min-width: 768px) and (orientation: portrait) {
+  .game__title {
+    padding-top: 50px;
+    font-size: 40px;
+    margin: 0px auto 30px auto;
+  }
+  .game__image-wrapper {
+    width: 90%;
+    height: 250px;
+  }
+  .game__image-wrapper .game__image {
+    padding: 5px;
+  }
+  .game__actual-score {
+    position: relative;
+    left: 0;
+    margin-top: 120px;
+  }
+  .game__actual-score__title {
+    font-size: 35px;
+  }
+  .game__actual-score__user, .game__actual-score__pc {
+    font-size: 28px;
+  }
+  .game__actual-score__winner {
+    font-size: 30px;
+  }
+  .game__final-score {
+    position: relative;
+    right: 0;
+    margin-top: 30px;
+  }
+  .game__final-score__title {
+    font-size: 35px;
+  }
+  .game__final-score__results {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 812px) {
+  .main__button {
+    top: calc(40% + 140px);
+    height: 110px;
+    width: 250px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .game__image-wrapper {
+    height: 400px;
+  }
+  .game__actual-score__title {
+    font-size: 55px;
+  }
+  .game__actual-score__user, .game__actual-score__pc {
+    font-size: 48px;
+  }
+  .game__actual-score__winner {
+    font-size: 50px;
+  }
+  .game__final-score {
+    position: relative;
+    right: 0;
+    margin-top: 30px;
+  }
+  .game__final-score__title {
+    font-size: 55px;
+  }
+  .game__final-score__results {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .game__title {
+    padding-top: 50px;
+    font-size: 40px;
+    margin: 0px auto 30px auto;
+  }
+  .game__image-wrapper {
+    height: 300px;
+    width: 90%;
+  }
+  .game__actual-score {
+    bottom: 70px;
+  }
+  .game__actual-score__title {
+    font-size: 40px;
+  }
+  .game__actual-score__user, .game__actual-score__pc {
+    font-size: 32px;
+  }
+  .game__actual-score__winner {
+    font-size: 38px;
+  }
+  .game__final-score__title {
+    font-size: 40px;
+  }
+  .game__final-score__results {
+    font-size: 32px;
+  }
+}
+
 @media (min-width: 1024px) {
   .main__title {
     height: 250px;
@@ -182,6 +382,36 @@
     top: calc(40% + 250px);
     height: 110px;
     width: 250px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .game__title {
+    font-size: 50px;
+  }
+  .game__image-wrapper .game__image {
+    padding: 10px;
+  }
+  .game__actual-score {
+    bottom: 180px;
+  }
+  .game__actual-score__title {
+    font-size: 40px;
+  }
+  .game__actual-score__user, .game__actual-score__pc {
+    font-size: 32px;
+  }
+  .game__actual-score__winner {
+    font-size: 38px;
+  }
+  .game__final-score {
+    bottom: 150px;
+  }
+  .game__final-score__title {
+    font-size: 40px;
+  }
+  .game__final-score__results {
     font-size: 32px;
   }
 }
