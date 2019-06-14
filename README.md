@@ -1,5 +1,8 @@
 # Simple Game-Paper-Rock-Scissors
 
+Click "Let's play", choose your option and click button "Start".
+
+
 Tech Work used:
 
 - HTML5
