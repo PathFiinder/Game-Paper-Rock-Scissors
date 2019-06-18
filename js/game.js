@@ -33,7 +33,7 @@ btnPlay.addEventListener('click', () => {
 for (let i = 0; i < options.length; i++) {
     document.querySelector(`.game__image-${options[i]}`).addEventListener('click', () => {
         if (ifChoose == false) {
-            document.querySelector(`.game__image-${options[i]}`).classList.add('game__image--active');
+            document.querySelector(`.game__image-${options[i]}`).classList.toggle('game__image--active');
             ifChoose = true;
         }
     });
