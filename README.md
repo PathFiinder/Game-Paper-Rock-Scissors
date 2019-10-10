@@ -2,16 +2,11 @@
 
 Click "Let's play", choose your option and click button "Start".
 
-
 Tech Work used:
-
 - HTML5
 - CSS3
 - RWD (Mobile First)
 - SASS
 - JavaScript(ES6)
-
-
-
 
 Live: https://pathfiinder.github.io/Game-Paper-Rock-Scissors
